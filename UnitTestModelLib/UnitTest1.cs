@@ -113,5 +113,12 @@ namespace UnitTestModelLib
         {
             book.Isbn13 = "abhsuejkmn12u";
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void TestIsbn13Invalid4()
+        {
+            book.Isbn13 = "648263425189a";
+        }
     }
 }
